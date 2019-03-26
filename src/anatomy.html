@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>toy-bem-style-mdn-anatomy</title>
+  <link rel="stylesheet" href="./anatomy.css"/>
+</head>
+<body>
+  <div class="wrap center">
+    <h1 class="wrap__title wrap__title--main">MDN Anatomy</h1>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Logo</h2>
+      <div class="wrap__block">
+        ${require('./components/logo/logo.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Nav</h2>
+      <div class="wrap__block">
+        ${require('./components/nav/nav.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">NavSubmenu</h2>
+      <h3 class="wrap__title">Technologies</h3>
+      <div class="wrap__block" style="position: relative; width: max-content; width: -moz-fit-content; width:-webkit-fit-content">
+        ${require('./components/nav/nav-submenu-technologies.html')}
+      </div>
+      <h3 class="wrap__title">References & Guides</h3>
+      <div class="wrap__block" style="position: relative; width: max-content; width: -moz-fit-content; width:-webkit-fit-content">
+        ${require('./components/nav/nav-submenu-references-guides.html')}
+      </div>
+      <h3 class="wrap__title">Feedback</h3>
+      <div class="wrap__block" style="position: relative; width: max-content; width: -moz-fit-content; width:-webkit-fit-content">
+        ${require('./components/nav/nav-submenu-feedback.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Auth</h2>
+      <div class="wrap__block">
+        ${require('./components/auth/auth.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Search</h2>
+      <div class="wrap__block">
+        ${require('./components/search/search.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Wiki Settings</h2>
+      <div class="wrap__block">
+        ${require('./components/wiki-settings/wiki-settings.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Breadcrumb</h2>
+      <div class="wrap__block">
+        ${require('./components/breadcrumb/breadcrumb.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Quick Menu</h2>
+      <div class="wrap__block">
+        ${require('./components/quick-menu/quick-menu.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Column Container</h2>
+      <div class="wrap__block">
+        ${require('./components/column-container/column-container.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Community</h2>
+      <div class="wrap__block">
+        ${require('./components/community-box/community-box.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Contributors</h2>
+      <div class="wrap__block">
+        ${require('./components/contributors/contributors.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Header</h2>
+      <div class="wrap__block">
+        ${require('./components/header/header.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Wiki Head</h2>
+      <div class="wrap__block">
+        ${require('./components/wiki-head/wiki-head.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Wiki Content</h2>
+      <div class="wrap__block">
+        ${require('./components/wiki-content/wiki-content.html')}
+      </div>
+    </div>
+    <div class="wrap__inner">
+      <h2 class="wrap__title wrap__title--underline">Footer</h2>
+      <div class="wrap__block">
+        ${require('./components/footer/footer.html')}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

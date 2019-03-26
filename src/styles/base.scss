@@ -1,0 +1,90 @@
+/* 브라우저 간 HTML 요소의 기본 스타일 일관성 유지 */
+@import '../../node_modules/normalize.css/normalize.css';
+
+/* body, 타이포그래피 등 기본 스타일 설정 */
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+@import './variables.scss';
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  letter-spacing: -.00278rem;
+  box-sizing: border-box;
+  font-family: "Note Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// box-sizing 일괄 설정
+* {
+  box-sizing: inherit;
+}
+
+// 링크 스타일 밑줄 및 색상 무효화
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, summary {
+  color: $blue-2;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+// mdn style
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.blind {
+  font-size: 0;
+  height: 0;
+  left: 0;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.clear {
+  clear: both;
+
+  &::after {
+      content: ' ';
+      clear: both;
+      display: table;
+  }
+}
+
+.transparent {
+  box-shadow: none;
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+}
+
+.center {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1400px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.title {
+  color: $gray-2;
+  display: block;
+}
+
+.smaller {
+  font-size: .88889rem;
+}

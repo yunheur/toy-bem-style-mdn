@@ -1,0 +1,27 @@
+@import '../../styles/utils.scss';
+
+$component: 'wiki-head';
+
+.#{$component} {
+  display: flow-root;
+  background-color: #f5f9fa;
+  padding: 30px 24px;
+  max-height: 105px;
+  @include element('center') {
+    margin: 0 auto;
+    max-width: 87.4375em;
+  }
+  @include element('document-title') {
+    display: inline-block;
+    float: left;
+    h1 {
+      font-size: 2.83333rem;
+      line-height: 1;
+    }
+  }
+  @include element('wiki-settings') {
+    display: inline-block;
+    float: right;
+    line-height: 45px;
+  }
+}

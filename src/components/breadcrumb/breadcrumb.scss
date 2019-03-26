@@ -1,0 +1,14 @@
+@import '../../styles/utils.scss';
+
+$component: 'breadcrumb';
+
+.#{$component} {
+  @include element('item') {
+    display: inline-block;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+  @include element('chevron-right') {
+    color: $gray-1;
+  }
+}

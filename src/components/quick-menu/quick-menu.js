@@ -1,0 +1,1 @@
+import './quick-menu.scss'

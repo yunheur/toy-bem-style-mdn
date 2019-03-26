@@ -1,0 +1,27 @@
+@import '../../styles/utils.scss';
+
+$component: 'contributors';
+
+.#{$component} {
+  font-size: .88889rem;
+  line-height: 1.6;
+  color: #696969;
+
+  @include element('sub') {
+    padding: 4px 0;
+  }
+  @include element('tag-list') {
+    display: inline-block;
+  }
+  @include element('tag-item') {
+    background: #eee;
+    border: 1px solid #cee9f9;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0 6px 6px 0;
+    padding: 1px 3px;
+  }
+  @include element('tag-link') {
+    color: #285c76;
+  }
+}

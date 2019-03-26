@@ -1,0 +1,13 @@
+@import '../../styles/utils.scss';
+
+$component: 'logo';
+
+.#{$component} {
+  @include element('link') {
+    background: url('../../img/mdn-web-docs.svg') no-repeat;
+    display: block;
+    width:219px;
+    height: 48px;
+    vertical-align: top;
+  }
+}

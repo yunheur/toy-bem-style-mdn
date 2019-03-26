@@ -1,0 +1,27 @@
+<div class="wiki-settings">
+  <ul class="wiki-settings__list">
+    <li class="wiki-settings__item">
+      <button class="wiki-settings__language transparent">
+          <i class="fa fa-language"></i>
+          <span>Language</span>
+      </button>
+      <div class="wiki-settings__submenu">
+        ${require('./wiki-settings__submenu-language.html')}
+      </div>
+    </li>
+    <li class="wiki-settings__item">
+      <a class="wiki-settings__edit" href="#">
+        <i class="fa fa-pencil"></i>
+        <span>edit</span>
+      </a>
+    </li>
+    <li class="wiki-settings__item">
+      <button class="wiki-settings__advanced transparent">
+        <i class="fa fa-cog"></i>
+      </button>
+      <div class="wiki-settings__submenu">
+        ${require('./wiki-settings__submenu-advanced.html')}
+      </div>
+    </li>
+  </ul>
+</div>

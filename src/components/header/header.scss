@@ -1,0 +1,32 @@
+@import '../../styles/utils.scss';
+
+$component: 'header';
+
+.#{$component} {
+  display: flow-root;
+  z-index: 96;
+  border-top: 5px solid #83d0f2;
+  padding-left: 15px;
+  @include element('left') {
+    float: left;
+  }
+  @include element('right') {
+    float: right;
+  }
+  @include element('logo') {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+  }
+  @include element('nav') {
+    display: inline-block;
+    position: relative;
+  }
+  @include element('auth') {
+    display: inline-block;
+  }
+  @include element('search') {
+    display: inline-block;
+    min-width: 100px;
+  }
+}

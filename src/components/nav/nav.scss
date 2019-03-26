@@ -1,0 +1,24 @@
+@import '../../styles/utils.scss';
+
+$component: 'nav';
+
+.#{$component} {
+  @include element('item') {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      background-color: $gray-5;
+    }
+  }
+  @include element('link') {
+    line-height: 88px;
+    padding: 0 10px;
+    color:$gray-2;
+  }
+  @include element('submenu') {
+    position: absolute;
+    top:100%;
+    right: 0;
+    z-index: 99;
+  }
+}

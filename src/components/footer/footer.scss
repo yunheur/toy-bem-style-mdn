@@ -1,0 +1,115 @@
+@import '../../styles/utils.scss';
+
+$component: 'footer';
+.#{$component} {
+  background-color: #222;
+  color: #fff;
+  padding: 60px 20px;
+  @include element('center') {
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    max-width: 87.4375em;
+  }
+  @include element('logo') {
+    width: 219px;
+    height: 48px;
+    background: url("../../img/mdn-web-docs.svg") 100% -58px no-repeat;
+    background-size: auto auto;
+    background-size: 219px auto;
+    display: block;
+    direction: ltr;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  @include element('mozilla') {
+    width: 114px;
+    height: 32px;
+    background: url("../../img/mdn-web-docs.svg") -96px -171px no-repeat;
+    background-size: 420px auto;
+    display: block;
+    direction: ltr;
+    text-indent: -9999px;
+    margin-bottom: 40px;
+  }
+  @include element('languages') {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    label {
+      display: block;
+      font-size: .77778rem;
+      cursor: pointer;
+    }
+    select {
+      max-width: 22.75%;
+      font-size: 1rem;
+      letter-spacing: -.00278rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  @include element('tos') {
+    margin-bottom: 20px;
+    font-size: 1.05556rem;
+    li {
+      margin-right: 20px;
+      display: inline-block;
+      a {
+        color: #83d0f2;
+      }
+    }
+  }
+  @include element('contentinfo') {
+    width: 31.33333%;
+    font-size: .77778rem;
+    p {
+      display: inline;
+      margin-bottom: 24px;
+    }
+  }
+  @include element('group-mdn') {
+    position: absolute;
+    top: 20px;
+    left: 39.91667%;
+    width: 22.75%;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  @include element('group-mozilla') {
+    position: absolute;
+    top: 20px;
+    left: 65.66667%;
+    width: 22.75%;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  @include element('group-title') {
+    display: block;
+    font-size: 1.11111rem;
+    font-family: Arial,x-locale-body,sans-serif;
+    letter-spacing: -.00278rem;
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+  @include element('group-list') {
+    a {
+      padding: 5px 0;
+      display: inline-block;
+      color: #83d0f2;
+    }
+  }
+  @include element('group-social') {
+    margin-right: 10px;
+    font-size: 1.33333rem;
+    display: inline-block;
+    padding-right: 10px;
+    a {
+      color: #83d0f2;
+    }
+  }
+}

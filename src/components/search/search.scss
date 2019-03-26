@@ -1,0 +1,15 @@
+@import '../../styles/utils.scss';
+
+$component: 'search';
+
+.#{$component} {
+  line-height: 88px;
+  background-color: $gray-1;
+  color: $white;
+  @include element('icon') {
+    text-align: center;
+    .fa-search {
+      vertical-align: middle;
+    }
+  }
+}

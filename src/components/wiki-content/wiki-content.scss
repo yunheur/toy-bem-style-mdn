@@ -1,0 +1,32 @@
+@import '../../styles/utils.scss';
+
+$component: 'wiki-content';
+
+.#{$component} {
+  display: flow-root;
+  margin: 0 auto;
+  max-width: 87.4375em;
+  padding: 30px 24px;
+  @include element("aside"){
+    float: left;
+    width: 22.75%;
+    margin-right: 3%;
+  }
+  @include element("section"){
+    float: right;
+    width: 74.25%;
+  }
+  @include element("article"){
+    padding-bottom: 20px;
+    border-bottom: 3px solid #3d7e9a;
+  }
+  @include element("breadcrumb"){
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    font-size: .88889rem;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  @include element("contributors"){
+    margin-top: 40px;
+  }
+}

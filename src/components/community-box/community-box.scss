@@ -1,0 +1,63 @@
+@import '../../styles/utils.scss';
+
+$component: 'community-box';
+
+.#{$component} {
+  box-sizing: border-box;
+  max-width: 42rem;
+  padding: 13px;
+  background-color: #e4f0f5;
+  font-size: 1rem;
+
+  @include element('header') {
+    font-size: 2.33333rem;
+    line-height: 1.2;
+  }
+
+	@include element('local-anchor') {
+		color: #3d7e9a;
+		width: 16px;
+		height: 16px;
+		pointer-events: none;
+		fill: currentColor;
+  }
+
+  @include element('subhead') {
+    margin-top: 13px;
+    margin-bottom: 6px;
+    font-size: 1.05556rem;
+    font-weight: 700;
+  }
+
+  @include element('mailinglist') {
+    margin: 13px 0 -6px 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  @include element('mailing-item') {
+    display: inline-block;
+    margin: 0 0 6px;
+  }
+
+  @include element('mailing-link') {
+    background: #3d7e9a;
+    display: inline-block;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+  }
+
+  @include element('contact-list') {
+    margin-top: 13px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  @include element('contact-item') {
+    
+  }
+  // @include element('') {
+    
+  // }
+}

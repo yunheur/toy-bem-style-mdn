@@ -1,0 +1,46 @@
+@import '../../styles/utils.scss';
+
+$component: 'nav-submenu';
+
+.#{$component} {
+  background-color: $white;
+  padding: 15px;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  border-top: 5px solid $gray-5;
+  box-shadow: 0 4px 4px rgba(0,0,0,.15);
+  text-align: left;
+  background-color: #fff;
+  @include element('close') {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px 2px;
+  }
+  @include element('column') {
+    padding-right: 20px;
+    vertical-align: text-top;
+  }
+  @include element('item') {
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  @include element('link') {
+    display: block;
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
+  @include element('title') {
+    color: $gray-2;
+    display: block;
+    font-size: 1.33333rem;
+    font-weight: 700;
+  }
+  @include modifier('dark'){
+    border-top: 5px solid $gray-4;
+  }
+}
